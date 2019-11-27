@@ -196,4 +196,4 @@ def search_by_price():
     return render_template("search_by_price.html", form=form)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=4000)
+    app.run()
