@@ -1,0 +1,15 @@
+{%extends "layout.html"%}
+{%block content%}
+  <div class="jumbotron">
+    <h5>INSERT NEW RECORD</h5>
+      <form method="post">
+        <h6>{{form.hidden_tag()}}
+        {{form.title.label}}{{form.title()}}
+        {{form.author.label}}{{form.author()}}
+        {{form.quantity.label}}{{form.quantity()}}
+        {{form.price.label}}{{form.price()}}
+        {{form.submit()}}
+      </h6>
+      </form>
+  </div>
+{%endblock content%}

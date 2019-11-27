@@ -1,0 +1,17 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<div class="jumbotron">
+    <form method="post" style="padding: 10px; background-color:#f7f3da;">
+      {{form.hidden_tag()}}
+      {{form.title.label}}{{form.title()}}
+      {{form.author.label}}{{form.author()}}
+      {{form.quantity.label}}{{form.quantity()}}
+      {{form.price.label}}{{form.price()}}
+      {{form.update()}}
+      {{form.delete()}}
+    </form>
+</div>
+
+
+{%endblock%}

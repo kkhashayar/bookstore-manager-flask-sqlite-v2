@@ -1,0 +1,12 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="jumbptron">
+  <div style="height:320px;width:720px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+    {%for book in result:%}
+    <ul class="list-group">
+      <li class="list-group-item "><a href={{book.id}}>{{book}}</a></li>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+{%endblock content%}

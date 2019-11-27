@@ -1,0 +1,13 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="jumbotron">
+  <h5>BOOKSTORE MAIN PAGE</h5>
+  <div style="height:520px;width:720px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+    <strong>{% for book in all_books: %}</strong>
+    <ul class="list-group">
+      <li class="list-group-item "><a href={{book.id}}><strong>{{book}}</strong></a></li>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+{%endblock content%}

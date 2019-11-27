@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="jumbotron">
+        <h5>SEARCH BY AUTHOR</h5>
+  <form method="post">
+    <h6>{{form.hidden_tag()}}
+    {{form.author.label}}{{form.author()}}
+    {{form.submit()}}
+  </h6>
+  </form>
+</div>
+</div>
+{% endblock content %}
